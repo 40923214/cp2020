@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,74 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='First.html'>First</a><ul><li><a href='主板和組件.html'>主板和組件</a><li><a href='擴展插槽.html'>擴展插槽</a><ul><li><a href='CNR —通信網絡轉接卡取代了AMR，並在轉接卡上支持六通道數字音頻，網絡功能和其他高質量的集成音頻支持。.html'>CNR —通信網絡轉接卡取代了AMR，並在轉接卡上支持六通道數字音頻，網絡功能和其他高質量的集成音頻支持。</a><li><a href='芯片組.html'>芯片組</a><li><a href='北橋.html'>北橋</a><li><a href='南橋.html'>南橋</a></li></ul><li><a href='連結器.html'>連結器</a><ul><li><a href='風扇連結器.html'>風扇連結器</a><li><a href='音頻連結器.html'>音頻連結器</a><li><a href='前面板連結器.html'>前面板連結器</a></li></ul><li><a href='處理器歷史.html'>處理器歷史</a><li><a href='虛擬化-1.html'>虛擬化-1</a><ul><li><a href='虛擬化-2.html'>虛擬化-2</a><li><a href='集成處裡單元(GPU).html'>集成處裡單元(GPU)</a></li></ul><li><a href='CPU散熱.html'>CPU散熱</a></li></ul><li><a href='CPH6 內存與BIOS.html'>CPH6 內存與BIOS</a><ul><li><a href='RAM基礎.html'>RAM基礎</a><li><a href='內存模塊-1.html'>內存模塊-1</a><ul><li><a href='內存模塊-2.html'>內存模塊-2</a><li><a href='分類記憶.html'>分類記憶</a></li></ul><li><a href='RAM歷史.html'>RAM歷史</a><li><a href='奇偶校驗.html'>奇偶校驗</a><ul><li><a href='內存模塊寬度.html'>內存模塊寬度</a><li><a href='奇偶校驗和ECC.html'>奇偶校驗和ECC</a></li></ul><li><a href='安裝內存模塊.html'>安裝內存模塊</a><li><a href='BIOS、CMOS簡介.html'>BIOS、CMOS簡介</a><ul><li><a href='認識BIOS、CMOS.html'>認識BIOS、CMOS</a></li></ul><li><a href='CMOS.html'>CMOS</a><li><a href='配置系統BIOS.html'>配置系統BIOS</a><ul><li><a href='統一可擴展固件接口(UEFI).html'>統一可擴展固件接口(UEFI)</a><li><a href='自動配置BIOS、CMOS.html'>自動配置BIOS、CMOS</a></li></ul><li><a href='開機自檢(POST)和錯誤報告.html'>開機自檢(POST)和錯誤報告</a><li><a href='BIOS更新.html'>BIOS更新</a></li></ul><li><a href='開發.html'>開發</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">內存模塊寬度 << <a href='內存模塊寬度.html'>Previous</a> <a href='安裝內存模塊.html'>Next</a> >> 安裝內存模塊<br /><h1>奇偶校驗和ECC</h1>
+<p id="N106A9" lang=""><span>奇偶校驗用於執行基本的錯誤檢查並確保內存內容可靠。此內存比非奇偶校驗慢，但增加了服務器和某些台式機工作站所需的可靠性。</span></p>
+<p id="N106AC" lang=""><span><span>奇偶校驗是一種檢測內存錯誤的相當簡單的方法，沒有任何校正功能。</span><span>奇偶校驗在添加到傳輸數據字符串的單個數據位中表示。</span><span>如果模塊通常具有七個數據位，則將八分之一添加為奇偶校驗位。</span><span>如果模塊通常有八個芯片用於數據，則添加第九個芯片以實現奇偶校驗。</span></span></p>
+<p id="N106AF" lang=""><span><span>每個字節都有一個與之關聯的奇偶校驗位。</span><span>在七位組成原始數據的情況下，總共傳輸了八位（七位原始數據位加一個奇偶校驗位）。</span><span>在八位組成原始數據的情況下，總共傳輸九位（八位數據位加一位奇偶校驗位）。</span><span>奇偶校驗位在寫入時設置，然後在讀取時進行計算和比較，以確定自存儲數據以來是否有任何位發生了更改。</span><span>這種類型的檢查僅限於檢測單個位錯誤。</span><span>如果更改了兩位，則奇偶校驗將“通過”，並且允許該錯誤可能破壞數據。</span></span></p>
+<p id="N106B2" lang=""><span><span>奇偶校驗可以實現為“ 0”奇偶校驗或“ 1”奇偶校驗。</span><span>存儲字節時，將加零（如果選擇了“ 1”奇偶校驗，則為零）的數目。</span><span>結果存儲在奇偶校驗位中-如果為奇數，則為“ 1”；如果為偶數，則為“ 0”。</span><span>當從內存中讀取該字節時，將再次對這些位進行計數，並將結果與奇偶校驗位中存儲的結果進行比較。</span><span>匹配表示數據從存儲時起就沒有改變（或以結果相同的方式更改了兩位）。</span></span></p>
+<p id="N106B5" lang=""><span><span>不管發送的原始數據位數如何，確定奇偶校驗位的過程都是相同的。</span><span>通常，原始數據有七位或八位。</span></span></p>
+<p id="N106B8" lang=""><span><span>奇偶校驗位是通過對數據字符串中“ 1”位的數量進行計數來確定的。</span></span></p>
+<p lang="">範例(1)</p>
+<p lang=""><span>使用偶校驗發送八位原始數據11110000。</span><span>要確定奇偶校驗位（數據的第9位），請計算數據字符串中“ 1”位的數量。</span><span>在這種情況下，有四個“ 1”位。</span><span>因為“ 1”位的總數是四，所以數據是偶數。</span><span>因此，奇偶校驗位設置為0。</span></p>
+<p lang=""><span><img alt="" height="57" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image17.png" width="280"/></span></p>
+<p lang=""><span>範例(2)</span></p>
+<p id="N106FC" lang=""><span>使用奇偶校驗傳輸七位原始數據1000010。要確定奇偶校驗位（數據的第八位），請計算數據串中“ 1”位的數量。在這種情況下，有兩個“ 1”位。因此，將奇偶校驗位設置為1，因為數據中“ 1”位（兩個）的總數為偶數，這與傳輸的奇數奇偶校驗不匹配。由於“ 1”位的數量和奇偶校驗設置（奇數）不匹配，因此必須將奇偶校驗位設置為1。由於“ 1”位的總數為2，因此將奇偶校驗位“ 1”添加到該字符串將在整個八位字符串（七個數據位加一個奇偶校驗位）中產生奇數個“ 1”位（三個）。</span></p>
+<p lang=""><span><img alt="" height="54" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image18.png" width="316"/></span></p>
+<p lang=""><span><span>由於所有</span><span><span>錯誤</span></span><span><span>中</span><span>約有90％<span> </span></span><span>是單比特類型的，因此奇偶校驗通常在大多數情況下就足夠了。</span><span>不幸的是，由於要花一些額外的時鐘週期來計算，存儲和獲取奇偶校驗位，因此錯誤檢查要付出一定的代價，這會稍微降低性能。</span><span>另一個考慮因素是，由於無法通過奇偶校驗解決錯誤，因此實際上必須停止應用程序，並發出一條錯誤消息，指出遇到奇偶校驗錯誤。</span></span></span></p>
+<p lang=""><span><span><span>範例(3)</span></span></span></p>
+<p lang=""><span><span><span><span>使用偶校驗發送111100000。</span><span>要確定在傳輸過程中是否已更改了內存，請計算數據字符串中包括奇偶校驗位的“ 1”位數。</span><span>在這種情況下，有四個“ 1”位。</span><span>由於數據中的“ 1”位（四位）總數為偶數，與傳輸的偶數奇偶校驗相匹配，因此未更改任何存儲器。</span></span></span></span></p>
+<p lang=""><span><span><span><span><img alt="" height="41" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image19.png" width="295"/></span></span></span></span></p>
+<p lang=""><span><span><span><span>範例(4)</span></span></span></span></p>
+<p lang=""><span><span><span><span><span>使用奇偶校驗發送10000100。</span><span>要確定在傳輸過程中是否已更改了內存，請計算數據字符串中包括奇偶校驗位的“ 1”位數。</span><span>在這種情況下，有兩個“ 1”位。</span><span>數據中“ 1”位的總數（兩個）是偶數，與傳輸的奇數奇偶校驗不匹配。</span><span>因此，內存已更改。</span></span></span></span></span></p>
+<p lang=""><span><span><span><span><span><img alt="" height="42" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image20.png" width="293"/></span></span></span></span></span></p>
+<br />內存模塊寬度 << <a href='內存模塊寬度.html'>Previous</a> <a href='安裝內存模塊.html'>Next</a> >> 安裝內存模塊</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
